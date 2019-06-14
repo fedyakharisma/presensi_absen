@@ -1,0 +1,23 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class CrudController extends CI_Controller {
+	public function Pegawai()
+	{
+		$this->load->view('pegawai');
+	}
+	public function Presensi()
+	{
+		$this->load->view('presensi');
+	}
+	public function kategori()
+	{
+		$this->load->view('CrudView');
+	}
+	
+	
+	}
+
+	
+	
+
