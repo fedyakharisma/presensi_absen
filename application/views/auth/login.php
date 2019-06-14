@@ -1,5 +1,3 @@
-
-
   <div class="container">
    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-7 mx-auto">
     <div class="card body p-0">
@@ -29,7 +27,7 @@
             <hr>
            
             <div class="text-center">
-                <a class="d-block small mt-3" href="<?php echo base_url('CrudController/registration'); ?>">Register an Account</a>
+                <a class="d-block small mt-3" href="<?php echo base_url('registration'); ?>">Register an Account</a>
           <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
             </div>
             
