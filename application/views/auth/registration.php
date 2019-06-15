@@ -14,13 +14,13 @@
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="text" id="name" class="form-control" placeholder="Email address" required="required">
+              <input type="text" id="name" name="name" class="form-control" placeholder="Full name" required="required">
               <label for="inputEmail">Full Name</label>
             </div>
           </div>
            <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="email" class="form-control" placeholder="Email address" required="required">
+              <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required="required">
               <label for="inputEmail">Email address</label>
             </div>
           </div>
@@ -28,7 +28,7 @@
             <div class="form-row">
               <div class="col-md-6">
                 <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                  <input type="password" id="password1" name="password1" class="form-control" placeholder="password" required="required">
                   <label for="inputPassword">Password</label>
                 </div>
               </div>
