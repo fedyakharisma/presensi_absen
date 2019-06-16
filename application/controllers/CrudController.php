@@ -99,7 +99,7 @@ class CrudController extends CI_Controller {
 			];
 
 			$this->db->insert('user', $data);
-			$this->session->set_flashdata('message', '<div class="alert alert-success" role=alert"> Conratulation yout account creeated </div>');
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role=alert"> Congratulation yout account creeated </div>');
 			redirect('CrudController');
 		}
 
