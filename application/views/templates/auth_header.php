@@ -20,3 +20,4 @@
   <link href="<?= base_url('assets/'); ?>css/sb-admin.css" rel="stylesheet">
 
 </head>
+<body class="bg-dark">
