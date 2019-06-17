@@ -74,6 +74,12 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Presensi</span></a>
       </li>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('CrudController/registration'); ?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Daftar Admin Baru</span></a>
+      </li>
     </ul>
 
     <div id="content-wrapper">
@@ -186,7 +192,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="<?php echo base_url('CrudController'); ?>">Logout</a>
         </div>
       </div>
     </div>
