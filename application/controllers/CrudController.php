@@ -50,7 +50,7 @@ class CrudController extends CI_Controller {
 						];
 
 						$this->session->set_userdata($data);
-						redirect('CrudController/kategori');
+						redirect('CrudKategori');
 
 					}else{
 							$this->session->set_flashdata('message', '<div class="alert alert-danger" role=alert"> this email is not bee </div>');
