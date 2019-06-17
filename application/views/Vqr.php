@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
 
+<head>
+  <!-- <meta http-equiv="Refresh" content="10; Qr"> -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -58,7 +59,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-  <ul class="sidebar navbar-nav">
+   <ul class="sidebar navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('CrudKategori'); ?>">
           <i class="fas fa-fw fa-table"></i>
@@ -85,73 +86,19 @@
 
       <div class="container-fluid">
 
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">Tables</li>
-        </ol>
+        <?php  
+        date_default_timezone_set('Asia/Jakarta');
+        $a=date("H");
+        $b=date("i");
+        if (($a<=8) && ($a>=6)) {
+          echo '<center><img src="'.base_url().'qr.png" /></center>';
 
-        <!-- DataTables Example -->
-        <div class="card mb-3">
-          <div class="card-header">
-            <i class="fas fa-table"></i>
-            Data Table Example</div>
-            
-          
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                  <tr>
-                    <th>No. </th>
-                    <th>Tanggal Absen</th> 
-                    <th>Nama Kategori</th>
-                    <th>Nama Pegawai</th>
-                    <th>Keterangan</th>
-                    <th>Keterlambatan</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th>No. </th>
-                    <th>Tanggal Absen</th> 
-                    <th>Nama Kategori</th>
-                    <th>Nama Pegawai</th>
-                    <th>Keterangan</th>
-                    <th>Keterlambatan</th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <?php
-                  $no = 1; //untuk menampilkan no
-                  foreach($list_presensi as $row){
-                    echo "
-                  <tr>
-                    <td>$no</td>
-                    <td>$row[tanggal_terlambat]</td>
-                    <td>$row[nama_kategori]</td>
-                    <td>$row[email]</td>
-                    <td>$row[keterangan]</td>
-                    <td>$row[keterlambatan]</td>
-                  </tr>
-                  ";
-                    $no++;
-                  }
-                  ?>
+        }else{
+          echo '<br><br><br><br><br><br><br>';
+          echo '<center>anda tidak bisa absen</center>';
+        }
         
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
-
-        <p class="small text-center text-muted my-5">
-          <em>More table examples coming soon...</em>
-        </p>
-
+        ?>
       </div>
       <!-- /.container-fluid -->
 
