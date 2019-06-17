@@ -61,7 +61,7 @@
    <ul class="sidebar navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('CrudKategori'); ?>">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-fw fa-table"></i>
           <span>Kategori</span></a>
       </li>
       <li class="nav-item">
@@ -72,7 +72,12 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('Qr'); ?>">
           <i class="fas fa-fw fa-table"></i>
-          <span>Presensi</span></a>
+          <span>Qr kode</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('CrudPresensi'); ?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>List Presensi</span></a>
       </li>
     </ul>
 
