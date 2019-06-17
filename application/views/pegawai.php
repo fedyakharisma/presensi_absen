@@ -74,6 +74,11 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Presensi</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('CrudController/registration'); ?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Tambah admin</span></a>
+      </li>
     </ul>
     <div id="content-wrapper">
 

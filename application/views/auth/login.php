@@ -23,7 +23,7 @@
       
        </form> 
         <div class="text-center">
-          <a class="d-block small mt-3" href="<?= base_url('CrudController/registration'); ?>">Register an Account</a>
+         <!--  <a class="d-block small mt-3" href="<?= base_url('CrudController/registration'); ?>">Register an Account</a> -->
           
         </div>
       </div>
