@@ -23,9 +23,10 @@ class Qr extends CI_Controller {
 	var_dump($qr['data']);
 	$qr['level'] = 'H';
 	$qr['size'] = 5;
-	$qr['savename'] = FCPATH."gambarqr/"."qr.png";
+	$qr['savename'] = FCPATH."gambarqr/"."qpr.png";
 	$qrimage=$this->ciqrcode->generate($qr);
 	$this->load->view("Vqr",$qrimage);
+	// redirect('Qr','refresh');
 
     }
 	
