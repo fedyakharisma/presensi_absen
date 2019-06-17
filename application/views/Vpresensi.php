@@ -58,10 +58,10 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-   <ul class="sidebar navbar-nav">
+  <ul class="sidebar navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('CrudKategori'); ?>">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-fw fa-table"></i>
           <span>Kategori</span></a>
       </li>
       <li class="nav-item">
@@ -72,7 +72,12 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('Qr'); ?>">
           <i class="fas fa-fw fa-table"></i>
-          <span>Presensi</span></a>
+          <span>Qr kode</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('CrudPresensi'); ?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>List Presensi</span></a>
       </li>
     </ul>
 
@@ -93,12 +98,7 @@
           <div class="card-header">
             <i class="fas fa-table"></i>
             Data Table Example</div>
-            <div><br></div>
-            <div>
-              <div class="col-md-3">
-                <a href="<?php echo base_url('CrudPegawai/add'); ?>" class="btn-primary">Tambah</a> 
-              </div>
-            </div>
+            
           
           <div class="card-body">
             <div class="table-responsive">
@@ -130,11 +130,11 @@
                     echo "
                   <tr>
                     <td>$no</td>
-                    <td>$row[nama_kategori]</td>
+                    <td>$row[tanggal_terlambat]</td>
                     <td>$row[nama_kategori]</td>
                     <td>$row[email]</td>
-                    <td>$row[Keterangan]</td>
-                    <td>$row[Keterlambatan]</td>
+                    <td>$row[keterangan]</td>
+                    <td>$row[keterlambatan]</td>
                   </tr>
                   ";
                     $no++;
